@@ -1,0 +1,14 @@
+.social-media-list {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    margin-top: 24px;
+    > li {
+        margin: 6px;
+        > a {
+            display: block;
+            width: 36px;
+            height: 36px;
+        }
+    }
+}

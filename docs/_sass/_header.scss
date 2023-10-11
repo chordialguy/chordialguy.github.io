@@ -1,0 +1,20 @@
+.site-header {
+    display: flex;
+    border-bottom: 1px solid #222;
+    align-items: center;
+    padding-right: 20px;
+    justify-content: space-between;
+    > .logo {
+        > a {
+            display: block;
+            width: 109px;
+            height: 109px;
+        }
+    }
+    > .text{
+        font-weight: 700;
+        > p {
+            margin: 0;
+        }
+    }
+}
