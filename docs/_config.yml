@@ -27,9 +27,9 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: chordialguy
 facebook_username: chordialguy
 youtube_username: "@chordialguy"
-instagram_username: "@chordialguy"
-whatsapp_channel_id: "https://whatsapp.com/channel/0029VaA9emCAO7RGTpshZV1u"
-telegram_channel_id: https://t.me/chordialguychannel
+instagram_username: "chordialguy"
+whatsapp_channel_id: "0029VaA9emCAO7RGTpshZV1u"
+telegram_channel_id: "chordialguychannel"
 
 # Build settings
 theme: minima
