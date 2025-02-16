@@ -1,8 +1,12 @@
 
-To run the command
+# Build
+bundle install
+
+# To run the command
 
 bundle exec jekyll serve
 
+# More on setup
 
 [Installing jekyll](https://jekyllrb.com/docs/installation/macos/)
 
