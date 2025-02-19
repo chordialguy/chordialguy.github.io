@@ -7,14 +7,24 @@
     > .logo {
         > a {
             display: block;
-            width: 109px;
-            height: 109px;
+            width: 100px;
+            height: 100px;
         }
     }
-    > .text{
+    > .blog-link {
         font-weight: 700;
-        > p {
+        > a {
+            color: #222;
             margin: 0;
+            &:hover {
+                color: red;
+                text-decoration: none;
+            }
+        }
+    }
+    .social-wrap {
+        @include tablet {
+            display: none;
         }
     }
 }

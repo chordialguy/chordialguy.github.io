@@ -1,0 +1,12 @@
+.footer-mobile {
+    position: fixed;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    display: none;
+    @include tablet {
+        display: flex;
+    }
+}
