@@ -5,7 +5,9 @@
     left: 0;
     right: 0;
     background-color: #fff;
+    box-shadow: 0 8px 17px 2px #222;
     display: none;
+    padding: 10px 0;
     @include tablet {
         display: flex;
     }

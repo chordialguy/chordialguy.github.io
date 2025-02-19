@@ -4,5 +4,5 @@
 
 layout: comingSoon
 ---
-The complete website will be coming soon. Meanwhile you can checkout my social media profiles and show some support there
+The complete website will be coming soon. Meanwhile you can checkout my social media profiles or even ping me for a quick chat
 
