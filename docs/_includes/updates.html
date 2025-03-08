@@ -1,13 +1,11 @@
 <div class="wrapper">
     <div class="content">
-    Updates
-    <ul>
+    <h2>Updates</h3>
+    <ul class="updates-list">
         {% for post in site.categories.updates %}
           <li>
             <a href="{{ post.link }}" target="_blank">
-                <p>{{ post.title }}</p>
                 <img src="/assets/post-images/{{ post.image }}" alt="{{ post.title }}" />
-                <p>Category {{ post.categories }}</p>
             </a>
           </li>
         {% endfor %}
