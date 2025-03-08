@@ -1,0 +1,14 @@
+<div class="wrapper">
+    <div class="content">
+        <h3>Quotes</h3>
+        <p id="quote-body"></p>
+        <p id="quote-author"></p>
+        <script>
+            const quotes = [{% for post in site.categories.quotes %}{body: "{{ post.title }}", author: "{{ post.author}}"}{% unless forloop.last %},{% endunless %}{% endfor %}];
+            const length = quotes.length;
+            const random = Math.floor(Math.random() * length);
+            document.querySelector('#quote-body').innerHTML = quotes[random].body;
+            document.querySelector('#quote-author').innerHTML = quotes[random].author;
+        </script>
+    </div>
+</div>
