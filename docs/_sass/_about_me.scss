@@ -1,0 +1,21 @@
+.about-wrapper {
+    display: flex;
+    align-items: center;
+    @include mobile {
+        display: block;
+    }
+}
+.about-image {
+    width: 180px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.about-content {
+    padding-left: 30px;
+    > p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}

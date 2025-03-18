@@ -4,3 +4,11 @@
         padding-bottom: 70px;
     }
 }
+section {
+    border-top: 1px solid;
+    padding: 20px 0;
+    &.no-border {
+        border-top: 0;
+        padding: 0;
+    }
+}

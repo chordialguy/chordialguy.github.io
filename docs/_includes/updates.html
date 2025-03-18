@@ -1,43 +1,45 @@
-<div class="wrapper">
-  <h2>Updates</h2>
-</div>
-<div class="updates-list-wrapper">
-  <ul id="updates-list" class="updates-list" style="width: calc(100vw * {{ site.categories.updates | size }});">
-    {% for post in site.categories.updates %}
-    <li>
-        <div class="updates-backdrop" style="background: url('/assets/post-images/{{ post.image }}');"></div>
-        <div class="wrapper">
-          <a href="{{ post.link }}" target="_blank">
-              <img src="/assets/post-images/{{ post.image }}" alt="{{ post.title }}" />
-          </a>
-        </div>
-    </li>
-    {% endfor %}
-  </ul>
-  <div class="updates-switcher wrapper no-padding">
-    <button class="updates-switcher-button left"></button>
-    <button class="updates-switcher-button right"></button>
+<section class="no-border">
+  <!-- <div class="wrapper">
+    <h2>Updates</h2>
+  </div> -->
+  <div class="updates-list-wrapper">
+    <ul id="updates-list" class="updates-list" style="width: calc(100vw * {{ site.categories.updates | size }});">
+      {% for post in site.categories.updates %}
+      <li>
+          <div class="updates-backdrop" style="background: url('/assets/post-images/{{ post.image }}');"></div>
+          <div class="wrapper">
+            <a href="{{ post.link }}" target="_blank">
+                <img src="/assets/post-images/{{ post.image }}" alt="{{ post.title }}" />
+            </a>
+          </div>
+      </li>
+      {% endfor %}
+    </ul>
+    <div class="updates-switcher wrapper no-padding">
+      <button type="button" title="Previous" class="updates-switcher-button left"></button>
+      <button type="button" title="Next" class="updates-switcher-button right"></button>
+    </div>
   </div>
-</div>
-<script>
-  function doUpdate(index) {
-    if(index < 0) {
-      index = updatesSize - 1
-    } else if(index >= updatesSize) {
-      index = 0
+  <script>
+    function doUpdate(index) {
+      if(index < 0) {
+        index = updatesSize - 1
+      } else if(index >= updatesSize) {
+        index = 0
+      }
+      updatesList.style.left = `calc(-100vw * ${index})`;
+      return index;
     }
-    updatesList.style.left = `calc(-100vw * ${index})`;
-    return index;
-  }
-  const updatesSize = {{ site.categories.updates | size }};
-  let updatesIndex = 0;
-  const updatesList = document.querySelector('#updates-list');
-  const updatesSwitcherLeft = document.querySelector('.updates-switcher-button.left');
-  const updatesSwitcherRight = document.querySelector('.updates-switcher-button.right');
-  updatesSwitcherLeft.addEventListener('click', () => {
-    updatesIndex = doUpdate(updatesIndex - 1);
-  });
-  updatesSwitcherRight.addEventListener('click', () => {
-    updatesIndex = doUpdate(updatesIndex + 1);
-  });
-</script>
+    const updatesSize = {{ site.categories.updates | size }};
+    let updatesIndex = 0;
+    const updatesList = document.querySelector('#updates-list');
+    const updatesSwitcherLeft = document.querySelector('.updates-switcher-button.left');
+    const updatesSwitcherRight = document.querySelector('.updates-switcher-button.right');
+    updatesSwitcherLeft.addEventListener('click', () => {
+      updatesIndex = doUpdate(updatesIndex - 1);
+    });
+    updatesSwitcherRight.addEventListener('click', () => {
+      updatesIndex = doUpdate(updatesIndex + 1);
+    });
+  </script>
+</section>
