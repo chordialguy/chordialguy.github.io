@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Chordial guy | Music Enthusiast
+title: Chordial guy
 email: hello@chordialguy.in
 social:
   name: Chordial guy
