@@ -29,6 +29,9 @@
         right: 0;
         background-image: url('/assets/icons/chevron_big_right.svg');
     }
+    @include tablet {
+        background-color: white;
+    }
 }
 .updates-list {
     clear: both;
