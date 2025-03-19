@@ -1,0 +1,76 @@
+.updates-list-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.updates-switcher {
+    position: relative;
+}
+.updates-switcher-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 200;
+    cursor: pointer;
+    height: 100%;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-position: center;
+    background-size: 32px;
+    width: 30px;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    &.left {
+        left: 0;
+        background-image: url('/assets/icons/chevron_big_left.svg');
+    }
+    &.right {
+        right: 0;
+        background-image: url('/assets/icons/chevron_big_right.svg');
+    }
+    @include tablet {
+        background-color: white;
+    }
+}
+.updates-list {
+    clear: both;
+    float: left;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+    transition-property: left;
+    transition-duration: 0.5s;
+    left: 0;
+    > li {
+        position: relative;
+        width: 100vw;
+        float: left;
+        a {
+            display: block;
+            position: relative;
+            z-index: 100;
+            > img {
+                display: block;
+            }
+            &:hover {
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(255, 0, 0, 0.1);
+                }
+            }
+        }
+    }
+}
+.updates-backdrop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(2) grayscale(50%) blur(20px);
+}

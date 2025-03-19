@@ -4,10 +4,15 @@
     align-items: center;
     padding: 20px;
     justify-content: space-between;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 900;
     > .logo-large {
         > a {
             display: block;
             width: 150px;
+            outline: none;
         }
     }
     > .logo-small {
