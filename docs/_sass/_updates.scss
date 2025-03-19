@@ -1,5 +1,6 @@
 .updates-list-wrapper {
     position: relative;
+    overflow: hidden;
 }
 .updates-switcher {
     position: relative;
@@ -8,7 +9,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 1;
+    z-index: 200;
     cursor: pointer;
     height: 100%;
     background-repeat: no-repeat;
