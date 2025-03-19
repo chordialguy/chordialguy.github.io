@@ -21,9 +21,10 @@
 title: Chordial guy
 email: hello@chordialguy.in
 description: >- # this means to ignore newlines until "baseurl:"
-  Coming soon
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+  Homepage
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://chordialguy.in" # the base hostname & protocol for your site, e.g. http://example.com
+logo: /assets/logo-large-black.png
 twitter_username: chordialguy
 facebook_username: chordialguy
 youtube_username: "@chordialguy"
