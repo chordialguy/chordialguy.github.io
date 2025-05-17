@@ -1,0 +1,6 @@
+---
+title:  Indian Halloween
+date:   2025-05-17 17:16:00 +0530
+image: learn.webp
+link: https://calendar.notion.so/meet/ishumadan/book-demo
+---

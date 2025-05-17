@@ -23,14 +23,24 @@
             height: 100px;
         }
     }
-    > .blog-link {
+    > .header-links {
         font-weight: 700;
-        > a {
-            color: #222;
-            margin: 0;
-            &:hover {
-                color: red;
-                text-decoration: none;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        > li {
+            margin-right: 20px;
+            > a {
+                color: #222;
+                margin: 0;
+                &:hover {
+                    color: red;
+                    text-decoration: none;
+                }
+            }
+            &:last-child {
+                margin-right: 0;
             }
         }
     }

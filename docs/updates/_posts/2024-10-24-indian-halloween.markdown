@@ -4,4 +4,3 @@ date:   2024-10-24 23:50:46 +0530
 image: indian-halloween.webp
 link: https://youtu.be/7UXVJekKeKI
 ---
-Jekyll requires blog post files to be named according to the following format:
