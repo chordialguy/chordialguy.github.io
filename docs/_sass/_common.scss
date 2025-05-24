@@ -11,3 +11,24 @@ section {
         padding: 0;
     }
 }
+.center-text {
+    text-align: center;
+    padding: 0 12px;
+}
+.info-blocks-columns {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    > li {
+        text-align: center;
+    }
+    > li .icon {
+        margin: auto;
+    }
+    > li .icon > svg {
+        width: 200px;
+        height: 200px;
+    }
+    @include mobile {
+        grid-template-columns: 100%;
+    }
+}
