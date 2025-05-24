@@ -1,0 +1,163 @@
+---
+layout: default
+tags: no-footer
+<!-- noFooter: false -->
+---
+
+  <style>
+    section.hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: url("/assets/piano-classes/piano-bg.png") no-repeat center center;
+      background-size: cover;
+      background-color: #f0f0f0;
+      background-color: rgba(255,255,255,0.75);
+      background-blend-mode: lighten;
+      padding: 3rem 1rem;
+    }
+
+    section.book-call {
+        text-align: center;
+    }
+
+    section.hero h2 {
+      font-size: 2rem;
+    }
+
+    section.hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 1rem auto;
+    }
+
+    .cta-button {
+      padding: 1rem 2rem;
+      background-color: #d62828;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 1.5rem;
+      display: inline-block;
+    }
+    .cta-button:hover {
+        text-decoration: none;
+        background-color: red;
+    }
+    .cta-button:visited {
+      color: white;
+    }
+
+
+    section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    section ul {
+      list-style: disc;
+      padding-left: 2rem;
+    }
+
+    footer {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+
+    .branding {
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+    .info-blocks-columns {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .info-blocks-columns > li {
+        text-align: center;
+    }
+    .info-blocks-columns > li .icon {
+        width: 200px;
+        margin: auto;
+    }
+  </style>
+
+  <section class="hero no-border">
+    <div class="wrapper">
+        <h1>Learn Piano with Chordial Guy</h1>
+        <p>Discover the joy of playing piano, tailored to your unique musical journey.</p>
+        <a target="_blank" href="{{ site.book_intro_call_link }}" class="cta-button">Book a Free Intro Call</a>
+      </div>
+  </section>
+
+  <section>
+    <div class="wrapper">
+        <h3>Why Learn from Me?</h3>
+        <ul class="info-blocks-columns">
+            <!-- <li>4+ years of Hindustani Classical training</li> -->
+            <li>
+                <div class="icon">
+                    <img src="/assets/piano-classes/learn-proficient.png" alt="Proficiency" />
+                </div>
+                <p>Proficient in piano and ukulele</p>
+            </li>
+            <li>
+                <div class="icon">
+                    <img src="/assets/piano-classes/learn-experience.png" alt="Proficiency" />
+                </div>
+                <p>Experience teaching music to beginners and hobbyists</p>
+            </li>
+            <li>
+                <div class="icon">
+                    <img src="/assets/piano-classes/learn-customized.png" alt="Proficiency" />
+                </div>
+                <p>Customized lessons based on your interests</p>
+            </li>
+            <li>
+                <div class="icon">
+                    <img src="/assets/piano-classes/learn-proficient.png" alt="Proficiency" />
+                </div>
+                <p>Focus on musicality, creativity, and foundational skills</p>
+            </li>
+          <!-- <li>Experience teaching music to beginners and hobbyists</li>
+          <li>Customized lessons based on your interests</li>
+          <li>Focus on musicality, creativity, and foundational skills</li> -->
+        </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper">
+        <h3>What You’ll Learn</h3>
+        <ul>
+          <li>Basic piano technique and posture</li>
+          <li>Reading staff notation</li>
+          <li>Playing by ear and improvisation</li>
+          <!-- <li>Raag-based melodies and fusion with Western theory</li> -->
+          <li>Song covers, chords, and performance tips</li>
+          <li>... and a lot more</li>
+        </ul>
+    </div>
+  </section>
+
+  <section class="book-call">
+    <div class="wrapper">
+        <h3>Book a Free 15-Minute Intro Call</h3>
+        <p>Let’s talk about your goals and see how we can start your musical journey together.</p>
+        <a target="_blank" href="{{ site.book_intro_call_link }}" class="cta-button">Book a Call</a>
+    </div>
+  </section>
+
+  <footer>
+    <p class="branding">© 2025 Chordial Guy | hello@chordialguy.in | +91 82172 73214</p>
+  </footer>
+
+
