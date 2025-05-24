@@ -1,3 +1,5 @@
-<footer class="footer-mobile">
-  {%- include social.html -%}
-</footer>
+{% if page.noFooter != false %}
+  <footer class="footer-mobile">
+    {%- include social.html -%}
+  </footer>
+{% endif %}

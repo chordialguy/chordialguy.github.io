@@ -1,5 +1,4 @@
 .main-content {
-    margin-top: 12px;
     @include tablet {
         padding-bottom: 70px;
     }
@@ -10,5 +9,26 @@ section {
     &.no-border {
         border-top: 0;
         padding: 0;
+    }
+}
+.center-text {
+    text-align: center;
+    padding: 0 12px;
+}
+.info-blocks-columns {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    > li {
+        text-align: center;
+    }
+    > li .icon {
+        margin: auto;
+    }
+    > li .icon > svg {
+        width: 200px;
+        height: 200px;
+    }
+    @include mobile {
+        grid-template-columns: 100%;
     }
 }
