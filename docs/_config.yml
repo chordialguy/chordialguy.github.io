@@ -28,6 +28,7 @@ social:
     - https://www.youtube.com/chordialguy
 description: >- # this means to ignore newlines until "baseurl:"
   Explore the musical world of Chordial Guy, aka Ishu Madan. Dive into piano and ukulele performances, blog posts, and connect on social media.
+image: /assets/me.webp
 keywords: Chordial Guy, Ishu Madan, pianist, ukulele, music genres, music blog
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://chordialguy.in" # the base hostname & protocol for your site, e.g. http://example.com
