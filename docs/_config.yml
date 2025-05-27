@@ -44,7 +44,7 @@ telegram_username: "chordialguy"
 telegram_channel_id: "chordialguychannel"
 blog_link: "https://blog.chordialguy.in"
 learn_from_me: "/piano-classes"
-book_intro_call_link: "https://calendar.notion.so/meet/ishumadan/book-demo"
+book_demo_link: "https://calendar.notion.so/meet/ishumadan/book-demo"
 
 # Build settings
 theme: minima
