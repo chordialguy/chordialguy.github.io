@@ -32,12 +32,12 @@
         > li {
             margin-right: 20px;
             > a {
-                color: $heading-color;
+                color: $primary-color;
                 margin: 0;
                 letter-spacing: 0.5px;
                 &:hover {
-                    color: $accent-color;
-                    border-bottom: 2px solid $accent-color;
+                    color: $secondary-color;
+                    border-bottom: 2px solid $secondary-color;
                     text-decoration: none;
                 }
             }

@@ -1,7 +1,6 @@
 .about-wrapper {
     display: flex;
     align-items: center;
-    color: $heading-color;
     @include mobile {
         display: block;
     }
