@@ -1,3 +1,6 @@
+.navigation-icon-path {
+    fill: $heading-color;
+}
 .updates-list-wrapper {
     position: relative;
     overflow: hidden;
@@ -14,20 +17,21 @@
     height: 100%;
     background-repeat: no-repeat;
     border: none;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: $background-color;
     background-position: center;
     background-size: 32px;
     width: 30px;
     &:hover {
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: $background-color-light;
+        .navigation-icon-path {
+            fill: $accent-color;
+        }
     }
     &.left {
         left: 0;
-        background-image: url('/assets/icons/chevron_big_left.svg');
     }
     &.right {
         right: 0;
-        background-image: url('/assets/icons/chevron_big_right.svg');
     }
     @include tablet {
         background-color: white;
@@ -50,10 +54,12 @@
             display: block;
             position: relative;
             z-index: 100;
+            transition: transform 0.3s ease-in-out;
             > img {
                 display: block;
             }
             &:hover {
+                transform: scale(1.03);
                 &:before {
                     content: '';
                     position: absolute;
@@ -61,7 +67,8 @@
                     left: 0;
                     width: 100%;
                     height: 100%;
-                    background: rgba(255, 0, 0, 0.1);
+                    background: rgba(0, 128, 128, 0); /* Transparent by default */
+                    transition: all 0.3s ease-in-out;
                 }
             }
         }
@@ -72,5 +79,21 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    filter: brightness(2) grayscale(50%) blur(20px);
+    filter: grayscale(50%) blur(20px);
+    background-size: contain;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0; bottom: 0;
+        width: 20%;
+        background-image: linear-gradient(to right, #F4F1DE, rgba(244, 241, 222, 0));
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0; bottom: 0;
+        right: 0;
+        width: 20%;
+        background-image: linear-gradient(to left, #F4F1DE, rgba(244, 241, 222, 0));
+    }
 }
