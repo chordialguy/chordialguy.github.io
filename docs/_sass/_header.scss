@@ -1,10 +1,10 @@
 .site-header {
     display: flex;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid $primary-color;
     align-items: center;
     padding: 20px;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: $background-color;
     position: sticky;
     top: 0;
     z-index: 900;
@@ -32,10 +32,12 @@
         > li {
             margin-right: 20px;
             > a {
-                color: #222;
+                color: $heading-color;
                 margin: 0;
+                letter-spacing: 0.5px;
                 &:hover {
-                    color: red;
+                    color: $accent-color;
+                    border-bottom: 2px solid $accent-color;
                     text-decoration: none;
                 }
             }

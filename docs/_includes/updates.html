@@ -5,19 +5,25 @@
   <div class="updates-list-wrapper">
     <ul id="updates-list" class="updates-list" style="width: calc(100vw * {{ site.categories.updates | size }});">
       {% for post in site.categories.updates %}
-      <li>
-          <div class="updates-backdrop" style="background: url('/assets/post-images/{{ post.image }}');"></div>
-          <div class="wrapper">
-            <a href="{{ post.link }}" target="_blank">
-                <img src="/assets/post-images/{{ post.image }}" alt="{{ post.title }}" />
-            </a>
+      <li class="carousel-wrapper">
+        <div class="carousel-blur left-blur"></div>
+        <div class="carousel-blur right-blur"></div>
+        <div class="updates-backdrop" style="background-image: url('/assets/post-images/{{ post.image }}');"></div>
+        <div class="wrapper">
+          <a href="{{ post.link }}" target="_blank">
+              <img src="/assets/post-images/{{ post.image }}" alt="{{ post.title }}" />
+          </a>
           </div>
       </li>
       {% endfor %}
     </ul>
     <div class="updates-switcher wrapper no-padding">
-      <button type="button" title="Previous" class="updates-switcher-button left"></button>
-      <button type="button" title="Next" class="updates-switcher-button right"></button>
+      <button type="button" title="Previous" class="updates-switcher-button left">
+        {% include svgs/chevron_big_left.svg %}
+      </button>
+      <button type="button" title="Next" class="updates-switcher-button right">
+        {% include svgs/chevron_big_right.svg %}
+      </button>
     </div>
   </div>
   <script>
